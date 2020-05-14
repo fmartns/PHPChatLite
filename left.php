@@ -6,3 +6,4 @@ if($left) {
 }
     fclose($left);
 ?>
+<meta http-equiv="refresh" content="0; url=index.htm">
