@@ -1,22 +1,13 @@
-<!DOCTYPE html>
-<html lang="en">
-    <head>
-        <meta charset="utf-8">
-        <title>Chat | Entry Code</title>
-    </head>
-    <body>
-    <?php
-        $nick = $_POST['nick'];
-        if($nick == ""){
-            echo "<script> location.href='index.htm'; </script>";
-            exit;
-        }
-        $entry = fopen("chat.txt", "a");
-        if($entry) {
-            fwrite($entry,"<b>{$nick}<i> entered the chat.</i></b><br>");
-        }
-        fclose($entry);
-        header("Location: conversation.php",TRUE,307); 
-    ?>
-    </body>
-</html>
+<?php
+    $nick = $_POST['nick'];
+    if($nick == ""){
+        echo "<script> location.href='index.htm'; </script>";
+        exit;
+    }
+    $entry = fopen("chat.txt", "a");
+    if($entry) {
+        fwrite($entry,"<b>{$nick}<i> entered the chat.</i></b><br>");
+    }
+    fclose($entry);
+    header("Location: conversation.php",TRUE,307); 
+?>
