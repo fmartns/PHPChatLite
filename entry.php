@@ -6,7 +6,7 @@
     }
     $entry = fopen("chat.txt", "a");
     if($entry) {
-        fwrite($entry,"<b>{$nick}<i> entered the chat.</i></b><br>");
+        fwrite($entry,"<b>{$nick}<i> entrou no chat.</i></b><br>");
     }
     fclose($entry);
     header("Location: conversation.php",TRUE,307); 

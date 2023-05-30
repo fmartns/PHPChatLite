@@ -6,36 +6,37 @@
     }
     ?>
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
   <head>
   <title>Chat</title>
-  <link rel="stylesheet" href="style.css">
+  <link rel="shortcut icon" type="image/png" href="addons/favicon.png">
+  <link rel="stylesheet" href="addons/css/style.css">
   </head>
   <body class="background">
   <div>
-    <iframe src="chat.php" width="1400" height="600" name="chat">Refresh your browser.</iframe><br>
+    <iframe src="chat.php" width="1550" height="550" name="chat">Atualize seu navegador.</iframe><br>
   </div>
     <hr color="white">
     <form action="send.php" method="post" target="chat">
       <b><?php echo $nick ?></b>
       <input name="nick" type="hidden" value="<?php echo $nick ?>">
-      <select class="custom-select" name="action">
-        <option value="speaks" selected>speaks</option>
-        <option value="shout">shout</option>
-        <option value="kiss">kiss</option>
-        <option value="sings">sings</option>
-        <option value="asking">asking</option>
-        <option value="agree">agree</option>
-        <option value="disagree">disagree</option>
-        <option value="smile">smile</option>
-        <option value="fun">fun</option>
-        <option value="fight">fight</option>
-        <option value="left">left</option>
-      </select> : <input type="text" name="text"> <input type="submit" value="speak">
+      <select class="custom-select" name="action" class="box">
+        <option value="fala" selected>fala</option>
+        <option value="grita">grita</option>
+        <option value="beijou">beijou</option>
+        <option value="canta">canta</option>
+        <option value="pergunta">pergunta</option>
+        <option value="aceita">aceita</option>
+        <option value="recusa">recusa</option>
+        <option value="sorri">sorri</option>
+        <option value="alegra-se">alegra-se</option>
+        <option value="briga">briga</option>
+        <option value="saiu">saiu</option>
+      </select> : <input type="text" name="text"> <input type="submit" value="Enviar">
     </form>
     <form action="left.php" method="post">
       <input name="nick" type="hidden" value="<?php echo $nick ?>">
-      <input type="submit" value="left">
+      <input type="submit" value="Sair">
     </form>
   </body>
 </html>

@@ -2,7 +2,7 @@
 $nick = $_POST['nick']; 
 $left = fopen("chat.txt", "a");
 if($left) {
-    fwrite($left,"<b>{$nick}<i> left the chat.</i></b><br>");
+    fwrite($left,"<b>{$nick}<i> saiu do chat.</i></b><br>");
 }
     fclose($left);
 ?>

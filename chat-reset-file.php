@@ -5,19 +5,20 @@
     fclose($bd);
 ?>
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
     <head>
+    <link rel="shortcut icon" type="image/png" href="addons/favicon.png">
     <meta charset="utf-8">
-    <title>Chat | Administration Area</title>
-    <link rel="stylesheet" href="style.css">
+    <title>Chat | Limpar Chat</title>
+    <link rel="stylesheet" href="addons/css/style.css">
     <script language="javascript">
         function reset(){
-            alert("This chat has ben cleared!");
+            alert("O chat foi limpo com sucesso!");
             window.close();
         }
     </script>
     </head>
     <body onLoad="javascript:reset()">
-    <p>Close this windows.</p>
+    <p>Feche essa janela..</p>
     </body>
 </html>
