@@ -8,6 +8,8 @@
     <style>
         body {
             background: #fff;
+            font-family: "Open Sans", Helvetica, Arial, sans-serif !important;
+            font-size: 15px;
         }
     </style>
     </head>

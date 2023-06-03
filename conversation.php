@@ -15,13 +15,13 @@ if ($nick == "") {
 </head>
 <body class="background">
 <div>
-    <iframe src="chat.php" width="1550" height="550" name="chat">Atualize seu navegador.</iframe><br>
+    <iframe src="chat.php" width="1515" height="550" name="chat" class="chatBox">Atualize seu navegador.</iframe><br>
 </div>
 <hr color="white">
 <form action="send.php" method="post" target="chat" onsubmit="clearText()">
     <b><?php echo $nick ?></b>
     <input name="nick" type="hidden" value="<?php echo $nick ?>">
-    <select class="custom-select" name="action" class="box">
+    <select class="custom-select-button" name="action">
         <option value="fala" selected>fala</option>
         <option value="grita">grita</option>
         <option value="beijou">beijou</option>
@@ -33,13 +33,18 @@ if ($nick == "") {
         <option value="alegra-se">alegra-se</option>
         <option value="briga">briga</option>
         <option value="saiu">saiu</option>
-    </select> : <input id="text-input" type="text" name="text">
-    <input type="submit" value="Enviar">
+    </select> : <input id="text-input" type="text" name="text" class="chatTextClass">
+    <input type="submit" value="Enviar" class="buttonClass">
 </form>
 <form action="left.php" method="post">
-    <input name="nick" type="hidden" value="<?php echo $nick ?>">
-    <input type="submit" value="Sair">
+        <input name="nick" type="hidden" value="<?php echo $nick ?>">
+        <input type="submit" value="Sair"  class="buttonClass">
 </form>
+<div class="ft">
+        <center>
+            <p class="version">PHPChatLite • Versão 2.0 • 2023</p>
+        </center>
+</div>
 
 <script>
     function clearText() {

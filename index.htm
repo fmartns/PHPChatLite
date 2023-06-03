@@ -1,22 +1,30 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-    <head>
-        <title>Chat | Login</title>
-        <meta charset="utf-8">
-        <link rel="stylesheet" href="addons/css/style.css">
-        <link rel="shortcut icon" type="image/png" href="addons/favicon.png">
-    </head>
-    <body class="background">
-        <div class="container">
-            <img src="addons/img/logo.png" alt="Logo">
-            <form action="entry.php" method="post">
-                <h2>Digite um apelido:</h2> 
-                <input type="text" name="nick"><br>
-                <input type="submit" value="ENTRAR"><br>
-            </form>
-        </div>
-        <footer>
-            <p>Chat desenvolvido com <span class="heart">❤</span> por<a href="https://fmartns.dev" class="developer"> fmartns</a>. Por favor, leia os <a class="terms" href="terms.htm" target="_blank" onclick="window.open(this.href, '_blank', 'width=800,height=600'); return false;">Termos de uso</a>.</p>
-        </footer>
-    </body>
+<head>
+  <title>Chat | Login</title>
+  <meta charset="utf-8">
+  <link rel="stylesheet" href="addons/css/style.css">
+  <link rel="shortcut icon" type="image/png" href="addons/favicon.png">
+</head>
+<body class="background">
+  <div class="container">
+    <center>
+    <img src="addons/img/logo.png" alt="Logo">
+    <form action="entry.php" method="post">
+    <h2 class="textH2">Escolha seu nickname:</h2>
+    <div class="login">
+        <input type="text" name="nick" placeholder="Digite seu nickname" class="textClass">
+        <input type="submit" value="Entrar" class="buttonClass"><br><br>
+        <p class="acceptClass">Ao clicar em "Entrar", você concorda com todos os nossos <a class="accept" href="terms.htm" target="_blank" onclick="window.open(this.href, '_blank', 'width=800,height=600'); return false;">Termos de uso</a>.</p>
+    </div>
+    </form>
+    </center>
+  </div>
+  <div class="ft">
+    <center>
+        <p class="version">PHPChatLite • Versão 2.0 • 2023</p>
+        <p class="phrase">A persistência é o caminho do êxito.. <a class="author">- Charles Chaplin</a></p>
+    </center>
+  </div>
+</body>
 </html>

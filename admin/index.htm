@@ -9,14 +9,22 @@
 <body class="background">
     <div class="container">
         <img src="../addons/img/logo.png" alt="Logo">
+        <center>
         <form action="../admin.php" method="POST">
-            <h2>Código de segurança :</h2>
-            <input name="code" type="password">
-            <input type="submit" value="Login">
+            <h2 class="textH2">Código de segurança:</h2>
+            <div class="login">
+                <input name="code" type="password" placeholder="Digite o código de segurança." class="textClass">
+                <input type="submit" value="Login" class="buttonClass"><br><br>
+                <p class="acceptClass">Ao entrar como administrador, você assume total responsabilidade pela plataforma.</p>
+            </div>
         </form>
+        </center>
     </div>
-    <footer>
-        <p>Chat desenvolvido com <span class="heart">❤</span> por<a href="https//fmartns.dev" class="developer"> fmartns</a>. Por favor, leia os <a class="terms" href="../terms.htm">Termos de uso</a>.</p>
-    </footer>
+    <div class="ft">
+        <center>
+            <p class="version">PHPChatLite • Versão 2.0 • 2023</p>
+            <p class="phrase">A persistência é o caminho do êxito.. <a class="author">- Charles Chaplin</a></p>
+        </center>
+      </div>
 </body>
 </html> 

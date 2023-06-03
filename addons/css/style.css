@@ -1,89 +1,130 @@
-@import url('https://fonts.googleapis.com/css2?family=Nanum+Gothic:wght@400;800&display=swap');
-
-body{
-    font-family: 'Nanum Gothic', sans-serif;
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
     overflow: hidden;
-    color: white;
-    background: #2B323C;
-}
-
-.container{
-    position: absolute;
-	top: 50%;
-	left: 50%;
-	transform: translate(-50%, -50%);
-	width: 340px;
-	text-align: center;
-}
-.spy{
-    text-decoration: none;
-    color: white;
-    left: 1200px;
-}
-
-footer{
-    position: absolute;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    text-align: center;
-}
-
-footer p{
-    color: white;
-}
-
-.heart{
-    color: red;
-}
-.developer{
-    text-decoration: none;
-    color: white;
-}
-.developer:hover{
-    color: #10f0de;
-}
-input[type=text] {
-    width: 70%;
-    padding: 12px 20px;
-    margin: 8px 0;
-    box-sizing: border-box;
-    border: none;
-    border-radius: 27px;
+    background-color: #f8fafc;
   }
-  input[type=password] {
-    width: 70%;
-    padding: 12px 20px;
-    margin: 8px 0;
-    box-sizing: border-box;
-    border: none;
-    border-radius: 27px;
+  
+  .container {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* Opcional: Define a altura do container como a altura total da janela do navegador */
   }
 
-  input[type=button], input[type=submit], input[type=reset] {
-	background-color:transparent;
-	border-radius:28px;
-	border: 2px solid #fff;
-	display:inline-block;
-	cursor:pointer;
-	color:#ffffff;
-	font-family:Arial;
-	font-size: 15px;
-	padding:16px 31px;
-	text-decoration:none;
-	text-shadow:0px 1px 0px #ffffff;
+  .buttonClass {
+  font-size:15px;
+  font-family:Arial;
+  width:140px;
+  height:50px;
+  color:#fff;
+  border-color: transparent;
+  border-top-left-radius:9px;
+  border-top-right-radius:9px;
+  border-bottom-left-radius:9px;
+  border-bottom-right-radius:9px;
+  background:rgba(36, 227, 190, 1);
   }
 
-    input[type=button]:hover, input[type=submit]:hover, input[type=reset]:hover {
-        background-color: #10f0de;
+  .buttonClass2 {
+    font-size:15px;
+    font-family:Arial;
+    width:200px;
+    height:30px;
+    color:#fff;
+    border-color: transparent;
+    border-top-left-radius:9px;
+    border-top-right-radius:9px;
+    border-bottom-left-radius:9px;
+    border-bottom-right-radius:9px;
+    background:rgba(36, 227, 190, 1);
+    }
+
+  .textClass {
+   padding: 15px;
+   font-size: 16px;
+   border-width: 0px;
+   border-color: #CCCCCC;
+   background-color: #FFFFFF;
+   color: #000000;
+   border-style: solid;
+   border-radius: 9px;
+   box-shadow: 0px 0px 2px #CCCCCC;
   }
 
-  .hidden{
-      visibility: hidden;
+  .chatTextClass {
+    width: 700px;
+    padding: 15px;
+    font-size: 16px;
+    border-width: 0px;
+    border-color: #CCCCCC;
+    background-color: #FFFFFF;
+    color: #000000;
+    border-style: solid;
+    border-radius: 9px;
+    box-shadow: 0px 0px 2px #CCCCCC;
   }
-  .terms{
-      color: white;
+
+  .textH2{
+      color: rgba(36, 227, 190, 1);
+      font-size: 35px;
+      font-family: "Open Sans", Helvetica, Arial, sans-serif !important;
   }
-  .terms:hover{
-      color: #10f0de;
+
+  .acceptClass{
+  font-size: 12px;
+  color: #858585;
+  font-weight: normal;
+  text-decoration: none;
+  font-style: normal;
+  font-variant: normal;
+  text-transform: none;
+  font-family: "Open Sans", Helvetica, Arial, sans-serif !important;
+  }
+
+  .accept{
+      text-decoration: none;
+      color: rgba(36, 227, 190, 1);
+  }
+
+  .ft {
+    flex-shrink: 0;
+    font-family: "Open Sans", Helvetica, Arial, sans-serif !important;
+    font-size: 12px;
+  }
+
+  .version{
+      color: #858585;
+  }
+  .phrase{
+      color: #C3C3C3;
+  }
+
+  .author{
+      color: #858585;
+  }
+
+  .custom-select-button {
+    width: 150px;
+    height: 40px;
+    border: 1px;
+    border-color: #C3C3C3;
+    border-radius: 9px;
+    background-color: #fff;
+    color: #333;
+    font-size: 16px;
+    padding: 10px;
+    cursor: pointer;
+  }
+
+  .chatBox {
+    border-radius: 9px;
+    border: 1px;
+    border-color: transparent;
   }
